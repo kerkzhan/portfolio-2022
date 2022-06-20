@@ -1,0 +1,31 @@
+.kp-stack-4 {
+  margin-bottom: $spacing-4;
+}
+
+.kp-stack-8 {
+  margin-bottom: $spacing-8;
+}
+
+.kp-stack-12 {
+  margin-bottom: $spacing-12;
+}
+
+.kp-stack-16 {
+  margin-bottom: $spacing-16;
+}
+
+.kp-stack-24 {
+  margin-bottom: $spacing-24;
+}
+
+.kp-stack-32 {
+  margin-bottom: $spacing-32;
+}
+
+.kp-stack-48 {
+  margin-bottom: $spacing-48;
+}
+
+.kp-flow > :not(:last-child):not([class*="kp-stack"]) {
+  margin-bottom: $spacing-24;
+}
