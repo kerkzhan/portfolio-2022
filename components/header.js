@@ -17,20 +17,8 @@ const Header = () => {
   ];
 
   return (
-    <nav className="kp-header">
-      <div className="kp-layout-content">
-        <div>LOGO</div>
-
-        <div className="kp-header-buttons">
-          {navLinks.map((link) => {
-            return (
-              <a href={link.link}>
-                <p>{link.name}</p>
-              </a>
-            );
-          })}
-        </div>
-      </div>
+    <nav className="kp-layout-header kp-header">
+      <div>LOGO</div>
     </nav>
   );
 };
