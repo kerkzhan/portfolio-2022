@@ -85,16 +85,15 @@ body {
 
 h1 {
   font-family: "Karla", sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 4rem;
 }
 
 h2 {
   font-family: "Karla", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 2.25rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 p {

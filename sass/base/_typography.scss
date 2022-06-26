@@ -5,16 +5,15 @@ body {
 
 h1 {
   font-family: $font-family-heading;
-  font-size: $font-size-largest;
-  font-weight: 700;
+  font-size: $font-size-largester;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-largest;
 }
 
 h2 {
   font-family: $font-family-heading;
-  font-size: $font-size-large;
-  font-weight: 700;
-  line-height: $line-height-larger;
+  font-size: $font-size-larger;
+  font-weight: $font-weight-bold;
 }
 
 p {
