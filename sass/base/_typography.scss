@@ -1,0 +1,22 @@
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-default;
+}
+
+h1 {
+  font-family: $font-family-heading;
+  font-size: $font-size-largest;
+  font-weight: 700;
+  line-height: $line-height-largest;
+}
+
+h2 {
+  font-family: $font-family-heading;
+  font-size: $font-size-large;
+  font-weight: 700;
+  line-height: $line-height-larger;
+}
+
+p {
+  color: $color-text-subdued;
+}

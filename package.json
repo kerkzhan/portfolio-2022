@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/inconsolata": "^4.5.6",
+    "@fontsource/karla": "^4.5.8",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
