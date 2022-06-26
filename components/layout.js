@@ -1,7 +1,4 @@
 import PropTypes from "prop-types";
-import Image from "next/image";
-import Sidebar from "./sidebar";
-import Header from "./header";
 
 const Layout = ({ children }) => {
   return (
