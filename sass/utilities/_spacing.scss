@@ -26,6 +26,14 @@
   margin-bottom: $spacing-48;
 }
 
+.kp-stack-64 {
+  margin-bottom: $spacing-64;
+}
+
+.kp-stack-128 {
+  margin-bottom: $spacing-128;
+}
+
 .kp-flow > :not(:last-child):not([class*="kp-stack"]) {
   margin-bottom: $spacing-24;
 }

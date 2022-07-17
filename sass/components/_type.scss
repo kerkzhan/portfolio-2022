@@ -1,0 +1,39 @@
+h1 {
+  font-size: $font-size-largest;
+  font-weight: $font-weight-semibold;
+}
+
+h2 {
+  font-size: $font-size-larger;
+}
+
+h3 {
+  font-size: $font-size-large;
+}
+
+.kp-hero-description {
+  font-size: $font-size-large;
+
+  strong {
+    &:first-child {
+      font-size: $font-size-larger;
+    }
+  }
+}
+
+.fade-in-text {
+  animation: fadeIn 2s forwards;
+}
+
+.hidden-text {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

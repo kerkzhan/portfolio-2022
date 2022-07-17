@@ -1,8 +1,6 @@
-.kp-sidebar {
-  background-color: $black;
-  color: $color-text-inverse;
-  a {
-    color: inherit;
-  }
-}
+.kp-header {
+  font-size: $font-size-large;
 
+  background-color: $color-background-body;
+  z-index: 10;
+}

@@ -1,0 +1,15 @@
+.kp-scroll {
+  text-orientation: upright;
+  color: $color-text-subdued;
+  font-weight: $font-weight-light;
+  div {
+    background-color: $color-text-subdued;
+  }
+}
+
+.kp-line {
+  height: 1px;
+  width: 100%;
+  color: white;
+  background-color: $gray-200;
+}

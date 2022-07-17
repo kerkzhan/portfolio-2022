@@ -1,14 +1,17 @@
-$black: #212529;
+$black: #2b2d42;
 $white: #ffffff;
 $gray-100: #edf2f4;
 $gray-200: #8d99ae;
 $red-300: #ef233c;
+$yellow: #ffcc00;
+$yellow-transparent: #ffcc0070;
 
 $font-size-small: 0.875rem;
 $font-size-default: 1rem;
 $font-size-large: 1.25rem;
 $font-size-larger: 2rem;
-$font-size-largest: 4rem;
+$font-size-largest: 3rem;
+$font-size-largester: 4.5rem;
 
 $line-height-small: 1.25rem;
 $line-height-default: 1.5rem;
@@ -18,6 +21,11 @@ $line-height-largest: 4rem;
 
 $font-weight-light: 300;
 $font-weight-bold: 600;
+$font-weight-semibold: 700;
+$font-weight-boldest: 800;
+
+$font-family-heading: "Karla", sans-serif;
+$font-family-body: "Inconsolata", monospace;
 
 $spacing-4: 0.25rem;
 $spacing-8: 0.5rem;
@@ -28,12 +36,17 @@ $spacing-24: 1.5rem;
 $spacing-32: 2rem;
 $spacing-48: 3rem;
 $spacing-64: 4rem;
+$spacing-128: 8rem;
 
 $breakpoint-medium: 700px;
-$page-max-width: 1080px;
+$page-max-width: 960px;
 $content-max-width: 70ch;
 
-$color-text-body: $black;
-$color-text-inverse: $gray-100;
+$color-text-body: $gray-100;
+$color-text-subdued: $gray-200;
+$color-text-inverse: $black;
+$color-text-links: $yellow;
 
-$color-background-body: $gray-100;
+$color-background-body: $black;
+$color-accent: $yellow;
+$color-accent-transparent: $yellow-transparent;
