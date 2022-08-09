@@ -30,10 +30,9 @@ export default function Home() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                onSubmit="submit"
                 data-netlify-honeypot="bot-field"
               >
-                <input name="bot-field" hidden />
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="kp-form-fields">
                   <div className="kp-form-field">
                     <input
