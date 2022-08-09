@@ -17,11 +17,11 @@ export default function Home() {
           <link rel="icon" href="/blob.svg" />
         </Head>
 
-        <section className="kp-layout-section kp-layout-hero">
+        <section className="kp-layout-section kp-layout-hero ">
           <Fade>
-            <h1>Get in touch</h1>
-            <p>
-              Get in touch or shoot me an email directly at{" "}
+            <h1 className="">Let's work together</h1>
+            <p className="kp-stack-32">
+              or shoot me an email directly at{" "}
               <strong>kerkzhan@gmail.com</strong>
             </p>
             <div>
