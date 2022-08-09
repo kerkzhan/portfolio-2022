@@ -28,6 +28,7 @@ export default function Home() {
               <form
                 className="kp-form-container"
                 name="contact"
+                action="/success"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
