@@ -1,10 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import Layout from "../components/layout";
 
-import bumpLogo from "../images/bump-logo.svg";
-import unitarLogo from "../images/unitar-logo.svg";
-import lvlupLogo from "../images/lvlup-logo.svg";
 import Fade from "react-reveal/Fade";
 
 export default function Home() {
@@ -37,7 +34,10 @@ export default function Home() {
                 </p>
                 <p>
                   Frontend developer, game designer, and tech enthusiast. My
-                  hobbies include <a className="kp-text-link">climbing rocks</a>
+                  hobbies include{" "}
+                  <Link href="/about">
+                    <a className="kp-text-link">climbing rocks</a>
+                  </Link>
                   .
                 </p>
                 <p>
@@ -47,7 +47,11 @@ export default function Home() {
                   approach to web development.
                 </p>
                 <p>
-                  Check out my other <a className="kp-text-link">work</a>.
+                  Check out my other{" "}
+                  <Link href="/work">
+                    <a className="kp-text-link">work</a>
+                  </Link>
+                  .
                 </p>
               </p>
             </Fade>

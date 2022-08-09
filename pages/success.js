@@ -21,7 +21,9 @@ export default function Home() {
             </p>
             <div>
               <Link href="/">
-                <a className="kp-text-link">Go back &#129042;</a>
+                <a aria-selected="true" className="kp-text-link">
+                  Go back &#129042;
+                </a>
               </Link>
             </div>
           </Fade>
