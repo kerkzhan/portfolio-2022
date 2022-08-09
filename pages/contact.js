@@ -30,7 +30,10 @@ export default function Home() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
+                onSubmit="submit"
+                data-netlify-honeypot="bot-field"
               >
+                <input name="bot-field" hidden />
                 <div className="kp-form-fields">
                   <div className="kp-form-field">
                     <input
@@ -61,10 +64,10 @@ export default function Home() {
                       spellCheck="false"
                     />
                   </div>
-                  <button type="submit" className="kp-btn-resume">
-                    <p>Send Message</p>
-                  </button>
                 </div>
+                <button type="submit" className="kp-btn-resume">
+                  <p>Send Message</p>
+                </button>
               </form>
             </div>
           </Fade>
