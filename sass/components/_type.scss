@@ -13,27 +13,50 @@ h3 {
 
 .kp-hero-description {
   font-size: $font-size-large;
+  * {
+    margin-top: $spacing-20;
+  }
 
-  strong {
+  b {
     &:first-child {
-      font-size: $font-size-larger;
+      font-size: $font-size-large;
     }
   }
 }
 
-.fade-in-text {
-  animation: fadeIn 2s forwards;
+.kp-text-subdued {
+  color: $color-text-subdued;
 }
 
-.hidden-text {
-  opacity: 0;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@media (max-width: $breakpoint-medium) {
+  h1 {
+    font-size: $font-size-larger;
+    font-weight: $font-weight-semibold;
   }
-  100% {
-    opacity: 1;
+
+  h2 {
+    font-size: $font-size-large;
+  }
+
+  h3 {
+    font-size: $font-size-default;
+  }
+
+  a {
+    font-size: $font-size-small;
+  }
+
+  .kp-hero-description {
+    font-size: $font-size-default;
+
+    * {
+      margin-top: $spacing-20;
+    }
+
+    b {
+      &:first-child {
+        font-size: $font-size-large;
+      }
+    }
   }
 }

@@ -1,8 +1,19 @@
 .kp-btn-resume {
-  background-color: transparent;
-  color: inherit;
-  border: solid;
-  border-width: 1px;
+  border: 1px solid $color-accent;
   padding: $spacing-8 $spacing-12;
-  font-size: $font-size-default;
+  color: $color-accent;
+  background-color: transparent;
+  background-image: linear-gradient($color-accent, $color-accent);
+  background-size: 0% 100%;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: $color-text-inverse;
+    cursor: pointer;
+  }
+}
+@media (max-width: $breakpoint-medium) {
 }

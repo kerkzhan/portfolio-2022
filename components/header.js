@@ -1,9 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import useScrollDirection from "../hooks/useScrollDirection";
+import useAtTopOfScreen from "../hooks/useAtTopOfScreen";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
+  const atTop = useAtTopOfScreen();
+  console.log(atTop);
   const navLinks = [
     {
       name: "About",
@@ -21,15 +26,38 @@ const Header = () => {
 
   return (
     <nav
-      className={`${
-        scrollDirection === "down" ? "hide" : "show"
+      className={` ${
+        !atTop && scrollDirection === "up" ? "shadow" : "hide"
       } kp-layout-header kp-header`}
     >
+      <Link href={"/"}>
+        <a>
+          <div>
+            <Image src="/blob.svg" height={50} width={50} />
+            <p>Kerk Zhan</p>
+          </div>
+        </a>
+      </Link>
+
       <div>
-        <Image src="/blob.svg" height={50} width={50} />
-        <p>Kerk Zhan</p>
+        <div className=" kp-layout-nav">
+          <Link href={"/about"}>
+            <a className="kp-nav-link">about</a>
+          </Link>
+          <Link href={"/work"} className="kp-nav-link">
+            <a className="kp-nav-link">work</a>
+          </Link>
+          <Link href={"/contact"} className="kp-nav-link">
+            <a className="kp-nav-link">contact</a>
+          </Link>
+        </div>
+
+        <a href="/resume.pdf" target="_blank">
+          <button className="kp-btn-resume">
+            <p>resume</p>
+          </button>
+        </a>
       </div>
-      <button className="kp-btn-resume">resume</button>
     </nav>
   );
 };

@@ -1,4 +1,4 @@
-a {
+a.kp-text-link {
   background-image: linear-gradient($color-accent, $color-accent),
     linear-gradient($color-text-subdued, $color-text-subdued);
   background-size: 0% 100%, 100% 0.1em;
@@ -6,12 +6,23 @@ a {
   background-repeat: no-repeat;
   transition: all 0.1s ease-out;
   color: $color-text-subdued;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-size: 100% 100%, 100% 0.1em;
+    color: $color-text-inverse;
+    cursor: pointer;
+  }
 }
 
-a:hover,
-a:focus,
-a:active {
-  background-size: 100% 100%, 100% 0.1em;
-  color: $color-text-inverse;
-  cursor: pointer;
+.kp-nav-link {
+  transition: all 0.1s ease-out;
+  color: $color-text-subdued;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-text-body;
+    cursor: pointer;
+  }
 }

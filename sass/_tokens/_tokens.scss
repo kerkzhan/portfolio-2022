@@ -1,10 +1,11 @@
 $black: #2b2d42;
+$black-subdued: #26283b;
 $white: #ffffff;
 $gray-100: #edf2f4;
 $gray-200: #8d99ae;
 $red-300: #ef233c;
 $yellow: #ffcc00;
-$yellow-transparent: #ffcc0070;
+$yellow-transparent: #ffcc0015;
 
 $font-size-small: 0.875rem;
 $font-size-default: 1rem;
@@ -39,12 +40,13 @@ $spacing-64: 4rem;
 $spacing-128: 8rem;
 
 $breakpoint-medium: 700px;
-$page-max-width: 960px;
+$page-max-width: 1280px;
 $content-max-width: 70ch;
 
 $color-text-body: $gray-100;
 $color-text-subdued: $gray-200;
 $color-text-inverse: $black;
+$color-text-inverse-subdued: $black-subdued;
 $color-text-links: $yellow;
 
 $color-background-body: $black;
