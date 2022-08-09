@@ -30,7 +30,6 @@ export default function Home() {
                 name="contact"
                 method="POST"
                 data-netlify="true"
-                action="/success"
               >
                 <div className="kp-form-fields">
                   <div className="kp-form-field">
