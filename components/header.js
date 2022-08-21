@@ -3,12 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import useScrollDirection from "../hooks/useScrollDirection";
 import useAtTopOfScreen from "../hooks/useAtTopOfScreen";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
   const atTop = useAtTopOfScreen();
-  console.log(atTop);
   const navLinks = [
     {
       name: "About",

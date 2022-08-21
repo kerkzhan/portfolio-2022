@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
-import Image from "next/image";
 import Header from "./header";
+import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
 
       <main>{children}</main>
-    </div>
+
+      <Footer />
+    </>
   );
 };
 Layout.propTypes = {

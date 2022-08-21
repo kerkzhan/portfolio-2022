@@ -1,3 +1,11 @@
+@mixin kp-text-skills {
+  color: $color-text-subdued;
+  font-size: $font-size-small;
+  background-color: $color-text-inverse-subdued;
+  border: $color-text-inverse-subdued 2px solid;
+  border-radius: 50px;
+}
+
 h1 {
   font-size: $font-size-largest;
   font-weight: $font-weight-semibold;
@@ -11,21 +19,38 @@ h3 {
   font-size: $font-size-large;
 }
 
+hr {
+  border: none;
+  height: 2px;
+  margin-top: 0;
+  background-color: $color-text-inverse-subdued; /* Modern Browsers */
+}
+
+figcaption {
+  font-size: $font-size-small;
+  font-style: italic;
+}
 .kp-hero-description {
-  font-size: $font-size-large;
+  font-size: $font-size-default;
   * {
     margin-top: $spacing-20;
   }
 
   b {
     &:first-child {
-      font-size: $font-size-large;
+      font-size: $font-size-larger;
     }
   }
 }
 
 .kp-text-subdued {
   color: $color-text-subdued;
+}
+
+.kp-text-skills-container {
+  * {
+    @include kp-text-skills;
+  }
 }
 
 @media (max-width: $breakpoint-medium) {
@@ -43,6 +68,10 @@ h3 {
   }
 
   a {
+    font-size: $font-size-small;
+  }
+
+  p {
     font-size: $font-size-small;
   }
 

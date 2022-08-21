@@ -2,4 +2,31 @@
   font-size: $font-size-large;
   background-color: $color-background-body;
   z-index: 10;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.hide {
+  top: -100px;
+  box-shadow: none;
+}
+
+.shadow {
+  box-shadow: 0px 2px 70px rgba(0, 0, 0, 0.5);
+}
+
+.kp-footer {
+  z-index: 10;
+  & > * {
+    color: $color-text-subdued;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      color: $color-text-body;
+      transform: scale(1.1);
+      transform: translate(0px, -3px);
+      cursor: pointer;
+    }
+  }
 }

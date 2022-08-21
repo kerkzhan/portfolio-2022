@@ -1,5 +1,7 @@
-$black: #2b2d42;
-$black-subdued: #26283b;
+// $black: hsl(235, 15%, 14%);
+$black: hsl(236, 20%, 12%);
+// $black-subdued: hsl(234, 22%, 12%);
+$black-subdued: hsl(236, 20%, 8%);
 $white: #ffffff;
 $gray-100: #edf2f4;
 $gray-200: #8d99ae;
@@ -8,10 +10,10 @@ $yellow: #ffcc00;
 $yellow-transparent: #ffcc0015;
 
 $font-size-small: 0.875rem;
-$font-size-default: 1rem;
+$font-size-default: 1.05rem;
 $font-size-large: 1.25rem;
 $font-size-larger: 2rem;
-$font-size-largest: 3rem;
+$font-size-largest: 2.75rem;
 $font-size-largester: 4.5rem;
 
 $line-height-small: 1.25rem;
@@ -25,9 +27,10 @@ $font-weight-bold: 600;
 $font-weight-semibold: 700;
 $font-weight-boldest: 800;
 
-$font-family-heading: "Karla", sans-serif;
-$font-family-body: "Inconsolata", monospace;
+$font-family-heading: "Rubik", sans-serif;
+$font-family-body: "Roboto Mono", monospace;
 
+$spacing-2: 0.1rem;
 $spacing-4: 0.25rem;
 $spacing-8: 0.5rem;
 $spacing-12: 0.75rem;
@@ -40,7 +43,7 @@ $spacing-64: 4rem;
 $spacing-128: 8rem;
 
 $breakpoint-medium: 700px;
-$page-max-width: 1280px;
+$page-max-width: 1024px;
 $content-max-width: 70ch;
 
 $color-text-body: $gray-100;

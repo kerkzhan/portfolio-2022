@@ -1,11 +1,9 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/layout";
 
-import bumpLogo from "../images/bump-logo.svg";
-import unitarLogo from "../images/unitar-logo.svg";
-import lvlupLogo from "../images/lvlup-logo.svg";
-import Fade from "react-reveal/Fade";
+import cats from "../images/catto.jpg";
 
 export default function Home() {
   return (
@@ -17,37 +15,63 @@ export default function Home() {
           <link rel="icon" href="/blob.svg" />
         </Head>
 
-        {/* <div className="kp-line"></div> */}
-        <section className="kp-layout-section kp-stack-128">
-          <div className="kp-layout-hero">
-            <Fade>
-              <p className="kp-hero-description">
-                <strong> Boon Kerk Zhan </strong>(b. 1997, Malaysia)
-                {/* is an <strong>independent web developer</strong> who loves
-                exploring technology and its ever evolving state. */}
-                <br />
-                <br />
-                Don't worry, this isn't one of those{" "}
-                <span style={{ fontStyle: "italic" }}>
-                  "Hi, I'm{" "}
-                  <span style={{ textDecoration: "underline" }}>
-                    {"\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0"}
-                  </span>{" "}
-                </span>
-                👋" introductions.
-                <br />
-                <br />
-                Frontend developer, game designer, and tech enthusiast. I enjoy
-                building intuitive and dynamic experiences that leave a lasting
-                memory. I also like to{" "}
-                <a className="kp-text-link">climb rocks</a>.
-                <br /> <br />
-                Right now, I am learning how to create{" "}
-                <strong>design systems</strong> for a more streamlined approach
-                to web development. You can learn more about me{" "}
-                <a className="kp-text-link">here</a>.
-              </p>
-            </Fade>
+        <section className="kp-layout-section kp-layout-about fade-in">
+          <div className="kp-stack-32">
+            <h1 className="kp-stack-4">The Past.</h1>
+            <p className="kp-stack-32">
+              Growing up, I fell in love with retro games. The technical skill
+              required in both art and programming inspired me. At a young age
+              of 10, I began my journey into creating{" "}
+              <a
+                href="https://www.artstation.com/kayzed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="kp-text-link"
+              >
+                pixel art
+              </a>
+              .
+            </p>
+            <p>
+              Eventually, I would find myself picking up Game Programming in
+              college to pursue that passion. However, during an internship, I
+              was introduced to web development and the rest was history!
+            </p>
+          </div>
+          <div className="kp-stack-32">
+            <h1>The Present.</h1>
+            <p className="kp-stack-32">
+              Today, I am still furthering my knowledge of web development
+              everyday. Right now, I am working on creating a database for local
+              bouldering spots that rock climbers can use as a guidebook for
+              information. You can check out my other{" "}
+              <Link href="/work">
+                <a className="kp-text-link">projects</a>
+              </Link>{" "}
+              too.
+            </p>
+
+            <p className="kp-stack-32">
+              As for hobbies, I spend my free time doing indoor rock climbing to
+              keep healthy. I also love a good camping trip in nature to unwind!
+            </p>
+            <p className="kp-stack-32">Did I mention I have 3 cats? 😺</p>
+            <div className="kp-img-container-fluid kp-stack-16">
+              <Image
+                src={cats}
+                alt="photo of cats"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <figcaption>(From front) Meet Genji, Finn, and Oliver!</figcaption>
+          </div>
+          <div>
+            <h1>The Future.</h1>
+            <p className="kp-stack-16">This is where you come in. </p>{" "}
+            <Link href="/contact">
+              <a className="kp-btn-resume">Get in touch.</a>
+            </Link>
           </div>
         </section>
       </div>
