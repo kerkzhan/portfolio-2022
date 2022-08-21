@@ -39,8 +39,8 @@ const Header = () => {
 
       <div>
         <div className=" kp-layout-nav">
-          {navLinks.map((link) => (
-            <Link href={link.link}>
+          {navLinks.map((link, index) => (
+            <Link key={index} href={link.link}>
               <a>{link.name}</a>
             </Link>
           ))}
