@@ -9,15 +9,15 @@ const Header = () => {
   const atTop = useAtTopOfScreen();
   const navLinks = [
     {
-      name: "About",
+      name: "about",
       link: "/about",
     },
     {
-      name: "Work",
+      name: "work",
       link: "/work",
     },
     {
-      name: "Contact",
+      name: "contact",
       link: "/contact",
     },
   ];
@@ -31,7 +31,7 @@ const Header = () => {
       <Link href={"/"}>
         <a>
           <div>
-            <Image src="/blob.svg" height={50} width={50} />
+            <Image src="/blob.svg" alt="blob logo" height={50} width={50} />
             <p>Kerk Zhan</p>
           </div>
         </a>
@@ -39,15 +39,11 @@ const Header = () => {
 
       <div>
         <div className=" kp-layout-nav">
-          <Link href={"/about"}>
-            <a className="kp-nav-link">about</a>
-          </Link>
-          <Link href={"/work"} className="kp-nav-link">
-            <a className="kp-nav-link">work</a>
-          </Link>
-          <Link href={"/contact"} className="kp-nav-link">
-            <a className="kp-nav-link">contact</a>
-          </Link>
+          {navLinks.map((link) => (
+            <Link href={link.link}>
+              <a>{link.name}</a>
+            </Link>
+          ))}
         </div>
 
         <a href="/resume.pdf" target="_blank">
