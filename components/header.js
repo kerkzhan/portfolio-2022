@@ -46,10 +46,8 @@ const Header = () => {
           ))}
         </div>
 
-        <a href="/resume.pdf" target="_blank">
-          <button className="kp-btn-resume">
-            <p>resume</p>
-          </button>
+        <a href="/resume.pdf" target="_blank" className="kp-btn-resume">
+          resume
         </a>
       </div>
     </nav>

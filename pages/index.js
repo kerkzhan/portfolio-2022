@@ -11,13 +11,10 @@ export default function Home() {
         <link rel="icon" href="/blob.svg" />
       </Head>
 
-      {/* <div className="kp-line"></div> */}
       <section className="kp-layout-section kp-stack-128">
         <div className="kp-layout-hero fade-in">
           <div className="kp-hero-description">
             <b> Boon Kerk Zhan </b>(b. 1997, Malaysia)
-            {/* is an <strong>independent web developer</strong> who loves
-                exploring technology and its ever evolving state. */}
             <p>
               Don't worry, this isn't one of those{" "}
               <span style={{ fontStyle: "italic" }}>
