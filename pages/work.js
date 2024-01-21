@@ -3,8 +3,6 @@ import Image from "next/image";
 import SkillNodes from "../components/skillNodes";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-import { TbBrandGithubFilled } from "react-icons/tb";
-
 import bumpLogo from "../images/bump-logo.svg";
 import unitarLogo from "../images/unitar-logo.svg";
 import lvlupLogo from "../images/lvlup-logo.svg";
