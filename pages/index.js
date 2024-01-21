@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../components/layout";
 
 export default function Home() {
   return (
@@ -26,23 +25,21 @@ export default function Home() {
               👋" introductions.
             </p>
             <p>
-              Frontend developer, game designer, and tech enthusiast. My hobbies
-              include{" "}
-              <Link href="/about">
-                <a className="kp-text-link">climbing rocks</a>
+              Frontend developer, game designer, and tech enthusiast. I like to climb rocks in my
+              spare time. Find out more{" "}
+              <Link href="/about" className="kp-text-link">
+                about me!
               </Link>
-              .
             </p>
             <p>
-              I enjoy building intuitive and dynamic experiences that leave a
-              lasting memory. Right now, I am learning how to create{" "}
-              <strong>design systems</strong> for a more streamlined approach to
-              web development.
+              I enjoy building intuitive and dynamic web experiences that leave a lasting memory.
+              Right now, I am learning how to create <strong>design systems</strong> for a more
+              streamlined approach to web development.
             </p>
             <p>
               Check out my other{" "}
-              <Link href="/work">
-                <a className="kp-text-link">work</a>
+              <Link href="/work" className="kp-text-link">
+                work
               </Link>
               .
             </p>

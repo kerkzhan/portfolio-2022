@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../components/layout";
 
 export default function Home() {
   return (
@@ -13,14 +12,10 @@ export default function Home() {
 
       <section className="kp-layout-section kp-layout-hero fade-in">
         <h1>Awesome!</h1>
-        <p className="kp-stack-32">
-          I'll get in touch with you as soon as I read your email.
-        </p>
+        <p className="kp-stack-32">I'll get in touch with you as soon as I read your email.</p>
         <div>
-          <Link href="/">
-            <a aria-selected="true" className="kp-text-link">
-              Go back &#129042;
-            </a>
+          <Link href="/" className="kp-text-link" aria-selected="true">
+            &#8592; Go back
           </Link>
         </div>
       </section>

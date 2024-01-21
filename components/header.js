@@ -29,19 +29,17 @@ const Header = () => {
       } kp-layout-header kp-header`}
     >
       <Link href={"/"}>
-        <a>
-          <div>
-            <Image src="/blob.svg" alt="blob logo" height={50} width={50} />
-            <p>Kerk Zhan</p>
-          </div>
-        </a>
+        <div>
+          <Image src="/blob.svg" alt="blob logo" height={50} width={50} />
+          <p>Kerk Zhan</p>
+        </div>
       </Link>
 
       <div>
         <div className=" kp-layout-nav">
           {navLinks.map((link, index) => (
             <Link key={index} href={link.link}>
-              <a>{link.name}</a>
+              {link.name}
             </Link>
           ))}
         </div>

@@ -18,15 +18,17 @@
 
 .kp-footer {
   z-index: 10;
-  & > * {
-    color: $color-text-subdued;
-    transition: all 0.1s ease-in-out;
-
+  a {
     &:hover {
       color: $color-text-body;
       transform: scale(1.1);
       transform: translate(0px, -3px);
       cursor: pointer;
     }
+  }
+
+  & > * {
+    color: $color-text-subdued;
+    transition: all 0.1s ease-in-out;
   }
 }

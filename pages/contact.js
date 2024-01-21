@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Layout from "../components/layout";
 
 export default function Home() {
   return (
@@ -27,13 +26,7 @@ export default function Home() {
             <input type="hidden" name="form-name" value="contact" />
             <div className="kp-form-fields">
               <div className="kp-form-field">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  aria-required="true"
-                  required
-                />
+                <input type="text" name="name" placeholder="Name" aria-required="true" required />
               </div>
               <div className="kp-form-field">
                 <input

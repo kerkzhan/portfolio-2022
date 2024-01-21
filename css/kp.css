@@ -65,18 +65,16 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 body {
-  background-color: hsl(236deg, 20%, 12%);
+  background-color: hsl(236, 20%, 12%);
   color: #edf2f4;
 }
 
@@ -155,7 +153,6 @@ a {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   margin-left: auto;
@@ -238,7 +235,7 @@ a {
 }
 .kp-header {
   font-size: 1.25rem;
-  background-color: hsl(236deg, 20%, 12%);
+  background-color: hsl(236, 20%, 12%);
   z-index: 10;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -257,15 +254,15 @@ a {
 .kp-footer {
   z-index: 10;
 }
-.kp-footer > * {
-  color: #8d99ae;
-  transition: all 0.1s ease-in-out;
-}
-.kp-footer > *:hover {
+.kp-footer a:hover {
   color: #edf2f4;
   transform: scale(1.1);
   transform: translate(0px, -3px);
   cursor: pointer;
+}
+.kp-footer > * {
+  color: #8d99ae;
+  transition: all 0.1s ease-in-out;
 }
 
 a.kp-text-link {
@@ -278,7 +275,7 @@ a.kp-text-link {
 }
 a.kp-text-link:hover, a.kp-text-link:focus, a.kp-text-link:active {
   background-size: 100% 100%, 100% 0.1em;
-  color: hsl(236deg, 20%, 12%);
+  color: hsl(236, 20%, 12%);
   cursor: pointer;
 }
 
@@ -308,7 +305,7 @@ hr {
   border: none;
   height: 2px;
   margin-top: 0;
-  background-color: hsl(236deg, 20%, 8%); /* Modern Browsers */
+  background-color: hsl(236, 20%, 8%); /* Modern Browsers */
 }
 
 figcaption {
@@ -333,8 +330,8 @@ figcaption {
 .kp-text-skills-container * {
   color: #8d99ae;
   font-size: 0.875rem;
-  background-color: hsl(236deg, 20%, 8%);
-  border: hsl(236deg, 20%, 8%) 2px solid;
+  background-color: hsl(236, 20%, 8%);
+  border: hsl(236, 20%, 8%) 2px solid;
   border-radius: 50px;
 }
 
@@ -394,7 +391,7 @@ figcaption {
 }
 .kp-btn-resume:hover {
   background-size: 100% 100%;
-  color: hsl(236deg, 20%, 12%);
+  color: hsl(236, 20%, 12%);
   cursor: pointer;
 }
 
@@ -472,17 +469,7 @@ figcaption {
 }
 
 .fade-in {
-  -webkit-animation: fadeIn 0.75s ease-in;
-          animation: fadeIn 0.75s ease-in;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeIn 0.75s ease-in;
 }
 
 @keyframes fadeIn {
