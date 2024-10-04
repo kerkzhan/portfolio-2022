@@ -12,16 +12,15 @@ export default function Home() {
       <section className="kp-layout-section kp-layout-hero fade-in">
         <h1>Lets work together.</h1>
         <p className="kp-stack-32">
-          or shoot me an email directly at <strong>kerkzhan@gmail.com</strong>
+          or shoot me an email directly at <strong>kerkzhanboon@gmail.com</strong>
         </p>
         <div>
           <form
             className="kp-form-container"
             name="contact"
-            action="/success"
+            action={"/api/send"}
             method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            encType="application/x-www-form-urlencoded"
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="kp-form-fields">
