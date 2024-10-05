@@ -22,7 +22,7 @@ export default function Home() {
             method="POST"
             encType="application/x-www-form-urlencoded"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="nameeee" />
             <div className="kp-form-fields">
               <div className="kp-form-field">
                 <input type="text" name="name" placeholder="Name" aria-required="true" required />

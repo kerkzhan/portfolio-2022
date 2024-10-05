@@ -5,6 +5,10 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  if (req.body.nameeee) {
+    return res.redirect(302, "/error");
+  }
+
   if (req.method === "POST") {
     const { data, error } = await resend.emails.send({
       from: "hello@kerkzhan.com",
