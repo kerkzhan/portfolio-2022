@@ -4,8 +4,16 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.body.nameeee) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  console.log(req.body);
+
+  // Detect if the form was filled by a bot
+  if (req.body.realName) {
+    return res.redirect(302, "/error");
+  }
+
+  // Additional bot detection logic (e.g., checking for empty fields)
+  if (!req.body.name || !req.body.email || !req.body.message) {
     return res.redirect(302, "/error");
   }
 
@@ -30,4 +38,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.setHeader("Allow", ["POST"]);
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
-};
+}
