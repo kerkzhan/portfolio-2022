@@ -5,8 +5,6 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  console.log(req.body);
-
   // Detect if the form was filled by a bot
   if (req.body.realName) {
     return res.redirect(302, "/error");

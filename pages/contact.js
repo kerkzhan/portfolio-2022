@@ -1,6 +1,20 @@
 import Head from "next/head";
+import { toast } from "sonner";
+import { FiClipboard } from "react-icons/fi";
 
 export default function Home() {
+  function copyToClipboard() {
+    const wordToCopy = "kerkzhanboon@gmail.com";
+    navigator.clipboard
+      .writeText(wordToCopy)
+      .then(() => {
+        toast.success(`Copied: ${wordToCopy}`);
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  }
+
   return (
     <>
       <Head>
@@ -12,9 +26,22 @@ export default function Home() {
       <section className="kp-layout-section kp-layout-hero fade-in">
         <h1>Lets work together.</h1>
         <p className="kp-stack-32">
-          or shoot me an email directly at <strong>kerkzhanboon@gmail.com</strong>
+          shoot me an email directly at{" "}
+          <strong>
+            <span
+              style={{
+                cursor: "pointer",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 4,
+              }}
+              onClick={() => copyToClipboard()}
+            >
+              kerkzhanboon@gmail.com <FiClipboard />
+            </span>
+          </strong>
         </p>
-        <div>
+        {/* <div>
           <form
             className="kp-form-container"
             name="contact"
@@ -58,7 +85,7 @@ export default function Home() {
               <p>Send Message</p>
             </button>
           </form>
-        </div>
+        </div> */}
       </section>
     </>
   );
